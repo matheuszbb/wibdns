@@ -1,0 +1,1525 @@
+btns:
+  voltar: |-
+    🔙 voltar
+
+  relatorios: |-
+    📊 Relatorios
+
+  comandos: |-    
+    📜 Comandos
+
+  administracao: |-
+    #⃣ Administracão
+
+  perfil: |-
+    📱 Exibir perfil
+
+  add_saldo: |-
+    🏦 Adicionar saldo
+
+  depositar: |-
+    ✅ Finalizar
+  
+  servidores: |-
+    📡 Servidores
+
+  compra: |-
+    ⚡ Comprar Proxys
+
+  gateway_btn: |-
+    💠 ${gateway}
+
+  gateway_btn_btc: |-
+    ⚡ ${gateway}
+  
+  download_proxy: |-
+    ⬇ Download Lista Proxys ⚡   
+
+  configuracoes: |-
+    ⚙ configurações
+
+  remover: |-
+    🗑
+
+  status_ativo: |-
+    ✅
+
+  status_pendente2: |-
+    ❔
+
+  status_pendente: |-
+    ⚠
+
+  status_desativado: |-
+    ❌
+
+  status_concluido: |-
+    🎊
+
+  status_ativo_todos: |-
+    ✅ Ativar Todos
+
+  status_desativado_todos: |-
+    ❌ Desativar Todos
+
+  cancelar_proxy: |-
+    ❌ Cancelar Proxy ⚡ 
+
+  comprar: |-
+    ✅ Comprar
+  
+  icon_planilha: |-
+    📋 Google Planilha
+  
+  download_depositos: |-
+    ⬇ Download Lista Depositos 💰
+  
+  download_compras_numeros_sorteio: |-
+    ⬇ Download Lista Sorteios 🎲
+
+  download_compras: |-
+    ⬇ Download Lista Compras 🤑
+
+  download_vendas: |-
+    ⬇ Download Lista Vendas 📋
+
+  manutenca_on: |-
+    🔒 Ativar Manutencão
+
+  manutenca_off: |-
+    🔓 Desativar Manutencão
+
+  listar_adms: |-
+    📝 Listar Admins
+
+  listar_donos: |-
+    📝 Listar Donos
+
+  ban: |-
+    🔒 Banir
+
+  unban: |-
+    🔓 Desbanir
+
+  promover_dono: |-
+    🔶 Promover Dono
+
+  promover_admin: |-
+    🔹 Promover Admin
+
+  atualizar_saldo: |-
+    💠 Atualizar Saldo
+
+  broadcast: |-
+    📣 Broadcast
+
+  broadcast_user: |-
+    📝 Enviar Mensagem 📣
+
+  listar_planos_proxys: |-
+    📝 Listar Planos Proxys ⚡ 
+
+  create_plano_proxy: |-
+    ➕ Novo Plano Proxy ⚡ 
+
+  criar_session: |-
+    ➕ Cria Session 📦
+
+  check_user: |-
+    🔎 Check User 🧑‍💻
+    
+  suporte: |-
+    ❔ Dúvidas Frequentes
+
+  top10: |-
+    🔝 Top 10
+
+  top10saldo: |-
+    👑 Top 10 Saldo
+
+  top10compradores: |-
+    💹 Top 10 Compradores
+
+  top10depositantes: |-
+    🏆 Top 10 Depositantes
+
+  tutorial: |-  
+    💻 Tutorial 💻
+  
+  suporte_wp: |-
+    🧑‍💻 Suporte 🧑‍💻
+
+  configuracoes_pagamento: |-
+    💳 configurações de pagamento
+
+  atualizar_valor_bilhete: |-
+    🏷 atualizar valor bilhete
+
+  atualizar_taxa_efi: |-
+    📊 atualizar taxa Efi
+  
+  atualizar_bonus_deposito_btc: |-
+    💹 atualizar bonus deposito Btc
+  
+  eventos: |-
+    ⏰ Eventos
+
+  checar_evento: |-
+    🗒 checar Evento
+
+  criar_evento: |-
+    ➕ Novo Evento ⏰  
+  
+  adicionar_evento_horas: |-
+    ➕ Novo Horario ⏰ 
+
+  remover_evento: |-
+    🗑 Remover 
+  
+  testar_evento: |-
+    📲 Testar Evento
+
+  atualizar_evento_nome: |-
+    🗒 Atualizar Nome 
+  
+  atualizar_evento_status: |-
+    ⚙ Atualizar Status 
+  
+  atualizar_evento_horas: |-
+    ⌚ Atualizar horas 
+  
+  atualizar_evento_dias: |-
+    📅 Atualizar Dias 
+  
+  atualizar_evento_dias_semana: |-
+    📆 Atualizar Dias Da Semana 
+
+  atualizar_evento_meses: |-
+    🗓 Atualizar Meses 
+
+  atualizar_evento_msgs: |-
+    ✍ Atualizar Mensagens 
+  
+  copiar_evento: |-
+    🖇 Copiar Evento
+
+  backup: |-
+    🗄 Donwload Backup
+
+  adicionar_servidor: |-
+    ➕ Novo Servidor ⚠
+
+  adicionar_admin: |-
+    ➕ Novo Admin ⚠
+  
+  adicionar_dono: |-
+    ➕ Novo Dono ⚠
+
+  enviar_evento_agora: |-
+    📧 Enviar Evento Agora
+
+  relatorios_detalhados: |-
+    📊 Relatorios Detalhados
+  
+  comprar_bilhete: |-
+    🏷 Comprar Bilhete
+  
+  criar_sorteio: |-
+    ➕ Novo Sorteio 🎲
+
+  listar_sorteios: |-
+    🎲 Sorteios
+
+  tipo_status_ativo: |-
+    ✅ Ativo
+
+  tipo_status_concluido: |-
+    🎊 Concluido
+
+  tipo_status_pendente: |-
+    ❔Pendente
+
+  tipo_status_cancelado: |-
+    ❌ Cancelado
+
+  verificar_msg: |-
+    📲 Verificar Messagem
+  
+  msg_cancelar: |-
+    ❌ Cancelar
+  
+  msg_ativar: |-
+    ✅ Ativar
+  
+  proximo: |-
+    ➡️ Próximo
+
+  anterior: |-
+    ⬅️ Anterior
+
+  avanca_1: |-
+    ➡️
+
+  avanca_2: |-
+    ⏩
+
+  volta_1: |-
+    ⬅️
+
+  volta_2: |-
+    ⏪
+
+  volta_inicio: |-
+    ⏮ Início
+
+  volta_meio: |-
+    ⏸ Meio ⏸
+
+  avanca_fim: |-
+    Fim ⏭
+  
+  remover_numeros_sorteio_selecionados: |-
+    🗑 Remover Selecionados
+
+  exibir_meus_bilhetes: |-
+    🏷 Exibir Meus Bilhetes
+  
+  download_meus_bilhetes: |-
+    ⬇ Download Meus Bilhetes 🏷
+
+  comprar_numeros_sorteio_aleatorios: |-
+    🎲 Comprar Números Aleatórios
+
+  remover_user_sorteio: |-
+    🔎 Remover Usuário 🧑‍💻
+  
+  buscar_sorteio: |-
+    🔎 Buscar Sorteio 🎲
+  
+  concluir_sorteio: |-
+    🎊 Concluir Sorteio 🎲
+
+  atualizar_quantidade_sub_premio_sorteio: |-
+    🔢 Atualizar Quantidade Sub Premios
+  
+  listar_sub_premiados_sorteio: |-
+    🏅 Listar Sub Premiados
+
+  suporte_deposito: |-
+    ❔ Como Depositar 🏦
+
+  suporte_compra_bilhetes: |-
+    ❔ Como Comprar Bilhetes 🏷
+  
+  suporte_sub_sorteio: |-
+    ❔ Dúvidas Sobre Sub Premios 🏅 
+
+  suporte_sorteio_principal_exemplo: |-
+    ❔ Como Funciona o Sorteio 🎲 
+  
+  suporte_meus_bilhetes: |-
+    ❔ Dúvidas Sobre Meus Bilhetes 🏷
+
+  home: |-
+    🏠 Start
+  
+  ultimo_sorteio: |-
+    🎲 Último Sorteio 
+
+  verificar_ft_sorteio: |-
+    🌄 Verificar Foto Prêmio
+
+  verificar_ft_sub_sorteio: |-
+    🌠 Verificar Foto Sub Prêmio
+
+  atualizar_ft_sorteio: |-
+    ✍ Atualizar Foto Prêmio 
+  
+  atualizar_grupo_historico: |-
+    📝 Atualizar Grupo historico
+  
+  atualizar_ft_bot: |-
+    📸 Atualizar Foto Bot
+
+  remover_ft_bot: |-
+    🗑 Remover Foto Bot
+
+msg_pre_deletar: |-
+  💡 Para deletar efetivamente. 
+
+  ✅ Pressione /confirmar.
+
+  ❌ Pressione /cancelar para cancelar.  
+
+msg_pre_cancelar: |-
+  💡 Para cancelar efetivamente. 
+
+  ✅ Pressione /confirmar.
+
+  ❌ Pressione /cancelar para cancelar. 
+
+msg_processando: |-
+  Processando, por favor aguarde.
+
+msg_erro_download: |-
+  Erro ao Fazer Donwload.
+
+msg_erro_dados_nao_encontrados: |-
+  Erro, dados não encontrados.
+
+msg_ativar_manutencao: |-
+  Para prosseguir de forma segura, ative o modo de manutenção primeiro.
+
+msg_operecao_cancelada: |-
+  ❌ Operação cancelada.
+
+msg_operecao_sucesso: |-
+  ✅ Operação realizada com sucesso.
+
+msg_atualizando_dados: |-
+  🛅 Atualizando dados, por favor aguarde.
+
+dns:
+  msg_arquivo_recebido: |-
+    Arquivo ${file_name_original} recebido e salvo com sucesso!
+
+  msg_dados_recebimento: |-
+    📊 Total: ${total}
+    ✅ Sucesso: ${validos}
+    🚨 Falha: ${invalidos}
+    📅 Data: $date_time
+
+  msg_cancelar_quantidade_validos_zero: |-
+    ❌ A inserção será cancelada pois não foi encontrado nenhum DNS válido.
+  
+  msg_cancelar_quantidade_servidores_zero: |-
+    ❌ A inserção será cancelada pois não foi encontrado nenhum Servidor.
+
+  msg_pre_ssh: |-
+    💡 Para continuar escolha ação final. 
+
+    🚫 Pressione /bloquear.
+
+    ♻ Pressione /desbloquear.
+
+    ❌ Pressione /cancelar para cancelar. 
+
+  msg_inicio_bloquear: |-
+    ✅ Iniciando o bloqueio de ${validos} DNS no servidor: <code>${ip}</code>, por favor, aguarde.
+
+  msg_inicio_desbloquear: |-
+    ✅ Iniciando o desbloqueio de ${validos} DNS no servidor: <code>${ip}</code>, por favor, aguarde.
+
+sorteios:
+  atualizar_ft_sorteio: |-
+    Por favor, forneça uma Foto do prêmio.
+
+  msg_pre_sorteio_concluido_vencedor: |-
+    🍾 Último Número Comprado 🍾
+
+    $hora_do_dia, $nome. 
+    Este é o momento mais aguardado por todos. Em instantes, vamos processar os dados para descobrir quem foi o vencedor do sorteio 😎. 
+    Boa sorte, estou torcendo por você 😁.
+
+    Caso tenha duvidas clique no botao "❔ Dúvidas Frequentes". 
+
+  msg_sorteio_concluido_vencedor: |-
+    🎉 Sorteio Finalizado 🎊
+
+    $hora_do_dia, $nome.
+    Gostaríamos de lhe dar os parabéns por ser o vencedor 🏆. 
+    Além disso, agradecemos pela confiança 🤭.
+    Hoje, $date_time, você foi o vencedor do nosso sorteio com o número <code>${numero_sorteado}</code>.
+    Referente ao sorteio com o ID: <code>${id_sorteio_interno}</code>
+
+    Em breve entraremos em contato para entregar seu prêmio 🥳. Por favor, aguarde.🤭
+
+  msg_sorteio_concluido_outros_participantes: |-
+    🎉 Sorteio Finalizado 🎊
+
+    $hora_do_dia, $nome.
+    Gostaríamos de agradecer pela confiança 🤭.
+    Mas infelizmente você não foi sorteado dessa vez 😭.
+    Não desista, tenho certeza de que conseguirá no proximo 😎.
+
+    🧑‍💻 Nome: ${nome_vencedor}
+    🏆 Número Sorteado: <code>${numero_sorteado}</code>.
+    🍀 Referente ao sorteio com o ID: <code>${id_sorteio_interno}</code>
+  
+  msg_sorteio_sub_premio_vencedor: |-
+    🎉 Parabéns Número Premiado 🎊
+
+    $hora_do_dia, $nome.
+    Gostaríamos de lhe dar os parabéns por comprar um dos números Premiados🥇. 
+    Além disso, agradecemos pela confiança 🤭.
+    Hoje, $date_time, você foi o vencedor do nosso sub-sorteio com o número: <code>${numero_sorteado}</code>.
+    Referente ao sorteio com o ID: <code>${id_sorteio_interno}</code>.
+
+    Em breve entraremos em contato para entregar seu prêmio 🥳. Por favor, aguarde.🤭
+
+  msg_sorteio_sub_premio_outros_participantes: |-
+    🍀 Número Premiado 🍀
+
+    $hora_do_dia, $nome.
+    Gostaríamos de dar os parabéns para ${nome_vencedor} pois ele acaba de comprar um dos números premiados🥇.
+    Não desista, continue comprando. Tenho certeza de que você será o próximo 😎.
+
+    🥇 Número Premiado: <code>${numero_premiado}</code>.
+    🍀 Referente ao sorteio com o ID: <code>${id_sorteio_interno}</code>
+
+  msg_sorteio_concluido_vencedor_historico: |-
+    🎉 Sorteio Finalizado 🎊
+    🆔 Id: <code>${user_id}</code>
+    🧑‍💻 Nome: ${nome}
+    📱 Username: ${username}
+    🎲 Sorteio: <code>${id_sorteio_interno}</code>
+    🔢 Número: <code>${numero_sorteado}</code>
+    📅 Data: ${date_time}
+
+  msg_sorteio_sub_premio_vencedor_historico: |-
+    🎉 Número Premiado 🎊
+    🆔 Id: <code>${user_id}</code>
+    🧑‍💻 Nome: ${nome}
+    📱 Username: ${username}
+    🎲 Sorteio: <code>${id_sorteio_interno}</code>
+    🔢 Número: <code>${numero_sorteado}</code>
+    📅 Data: ${date_time}
+
+  msg_acumulado: |-
+    ✅ Esse prêmio está acumulado.
+
+  msg_atualizar_quantidade_sub_premio_sorteio: |-
+    Por favor, informe a quantidade de números que serão escolhidos aleatoriamente para serem sub-prêmios. 
+    Sempre que escolher novos números, eles serão selecionados. Se preferir, pode zerar informando 0.
+    
+    Exemplo: 🔢 23 que e o máximo suportado.
+
+    ❌ Pressione /cancelar para cancelar. 
+
+  msg_comprar_numeros_sorteio_aleatorios: |-
+    Por favor, informe a quantidade de bilhetes aleatórios que deseja comprar. Exemplo: 🏷 5.
+
+    🏷 Valor Do Bilhete: R$$ $valor_bilhete  
+    💵 Saldo: R$$ $saldo
+
+    ❌ Pressione /cancelar para cancelar. 
+
+  msg_meus_numeros: |-
+    🏷 Meus Bilhetes:
+    🎲 Sorteio: <code>${id_sorteio}</code>
+    🔢 Números: ${quantidade_numeros}
+
+  msg_pre_concluir_negado_numeros_disponiveis:
+    ❌ Operação cancelada. Não é permitido concluir esse sorteio, pois ainda tem números disponiveis.
+
+  msg_pre_concluir_negado_dados_api_data_resultado:
+    ❌ Operação cancelada. Não é permitido concluir esse sorteio, pois a data do sorteio realizado na caixa é diferente da que foi programada para concluir nosso sorteio.
+
+  msg_pre_concluir_negado_dados_api_none:
+    ❌ Operação cancelada. Não é permitido concluir esse sorteio, pois o resultado foi None.
+
+  msg_pre_concluir_negado_status:
+    ❌ Operação cancelada. Não é permitido concluir esse sorteio, pois seu status não é "ativo".
+
+  msg_erro_compra: |-
+    ❌ Operação cancelada. Lamento, mas esse número já foi escolhido por outro usuário.
+
+  msg_erro_compra_aleatorios: |-
+    ❌ Operação cancelada. Lamento, mas todos os números já foram escolhidos por outros usuários.
+
+  msg_pre_ativar_negado_status:
+    ❌ Operação cancelada. Não é permitido ativar esse sorteio, pois seu status não é "pendente".
+
+  msg_pre_ativar_negado_sorteio_ativo:
+    ❌ Operação cancelada. Não é permitido ativar esse sorteio, pois já há um sorteio ativo no momento.
+
+  msg_pre_cancelar: |-
+    ⚠ Essa ação é irreversível quando confirmada. 
+    Os usuários participantes receberão os valores pagos pelo bilhete 
+    juntamente com uma mensagem informando sobre o cancelamento, assim como o grupo de histórico, se disponível.
+
+    💡 Para cancelar efetivamente. 
+
+    ✅ Pressione /confirmar.
+
+    ❌ Pressione /cancelar para cancelar. 
+
+  msg_comprovante_cancelamento: |-
+    ⚠ Aviso Cancelamento de Sorteio.
+    🆔 Id: <code>${user_id}</code>
+    🧑‍💻 Nome: ${nome}
+    📱 Username: ${username}
+    🆔 Id ADM: <code>${adm_id}</code>
+    🎲 Sorteio: <code>${sorteio_id}</code>
+    🔢 Números: ${quantidade_numeros}
+    💰 Saldo antes do cancelamento: R$$ ${saldo_anterior}
+    💵 Saldo depois do cancelamento: R$$ ${saldo_posterior}
+    📅 Data: ${date_time}
+
+  msg_comprovante_compra: |-
+    🧾 Comprovante:
+    🆔 Id: <code>${user_id}</code>
+    🧑‍💻 Nome: ${nome}
+    📱 Username: ${username}
+    🎲 Sorteio: <code>${sorteio_id}</code>
+    💵 Valor: R$$ ${valor}
+    🏷 Valor Do Bilhete: R$ ${valor_bilhete_interno}
+    🔢 Números: ${quantidade_numeros}
+    💰 Saldo antes da compra: R$$ ${saldo_anterior}
+    💵 Saldo depois da compra: R$$ ${saldo_posterior}
+    📅 Data: ${date_time}
+
+  msg_info_compra: |-
+    📊 Total = ${total}
+    ✅ Aprovados = ${aprovados}
+    ❌ Recusados = ${recusados}
+
+    ✅ Operação realizada com sucesso.
+
+    Obrigado pela compra 😊.
+    Seus números foram adquiridos com sucesso. 🍀 Boa sorte! 😊.
+    Qualquer coisa, é só entrar em contato com nossa equipe 😉.
+
+  criar_sorteio: |-
+    <b>Criação de Sorteios</b>.
+    Por favor, envie a mensagem que você deseja que seja exibida para os usuários. 
+    Algumas variáveis úteis, basta clicar nelas que serão copiadas para sua área de transferência.
+
+    <code>$$hora_do_dia</code>, exemplo: $hora_do_dia
+    <code>$$date_time</code>, exemplo: $date_time
+    <code>$$dia</code>, exemplo: $dia
+    <code>$$mes</code>, exemplo: $mes
+    <code>$$ano</code>, exemplo: $ano
+    <code>$$hora</code>, exemplo: $hora
+    <code>$$user_id</code>, exemplo: $user_id
+    <code>$$nome</code>, exemplo: $nome
+    <code>$$sobrenome</code>, exemplo: $sobrenome
+    <code>$$username</code>, exemplo: $username
+    <code>$$saldo</code>, exemplo: $saldo
+    <code>$$id_sorteio</code>, exemplo: $id_sorteio
+    <code>$$valor_bilhete</code>, exemplo: $valor_bilhete
+    <code>$$numeros_sorteio_atual_disponiveis</code>, exemplo: $numeros_sorteio_atual_disponiveis
+
+    ❌ Pressione /cancelar para cancelar.
+
+  listar_sorteios: |-
+    Abaixo estão todos os sorteios.
+    Basta clicar neles e configurar.
+    
+    Caso precise criar um novo sorteio. 
+    Clique no botão. "➕ Novo Sorteio 🎲"
+
+    📊 Total = ${quantidade}
+    ✅ Ativos = ${quantidade_ativo}
+    🎊 Concluidos = ${quantidade_concluido}
+    ❔Pendentes = ${quantidade_pendente}
+    ❌ Cancelados = ${quantidade_cancelado}
+
+  checar_sorteio: |-
+    🗒 Checar Sorteio 🎲
+    🆔 Id: <code>${sorteio_id}</code>
+    📅 Data Criacao: ${sorteio_data_criacao}
+    📆 Data Resultado: ${sorteio_data_resultado}
+    ⚙ Status: ${sorteio_status}
+
+    📊 Total = ${total}
+    ✅ Comprados = ${comprados}
+    ❌ Disponíveis = ${disponiveis}
+    💵 Lucro = R$$ ${lucro}
+
+  sub_msg_subpremiado_sorteio_admin: |-
+    🔢 Número Sorteado: <code>${numero_sorteado}</code>
+    📆 Data Compra ${sorteio_data_compra}
+    🆔 Id: <code>${user_id_sorteado}</code>
+    🧑‍💻 Nome: ${nome_sorteado}
+    📱 Username: ${username_sorteado}
+    <br>
+    <br>
+  
+  sub_msg_subpremiado_sorteio_users: |-
+    🔢 Número Sorteado: <code>${numero_sorteado}</code>
+    📆 Data Da Premiação ${sorteio_data_compra}
+    🏅 Nome: ${nome_sorteado}
+    <br>
+    <br>
+
+  sub_msg_subpremiado_sorteio_disponivel: |-
+    🔢 Número Sorteado: ${numero_sorteado}
+    ✅ Esse prêmio está esperando por você.
+    <br>
+    <br>
+
+  checar_sorteio_subpremiados: |-
+    🗒 Checar Sub Premiados 🏅
+    🆔 Id Sorteio: <code>${sorteio_id}</code>
+
+    ${sub_msg_subpremiado_sorteio}
+
+  checar_sorteio_concluido: |-
+    🗒 Checar Sorteio 🎲
+    🆔 Id: <code>${sorteio_id}</code>
+    🆔 Id API: <code>${sorteio_id_api}</code>
+    📅 Data Criacao ${sorteio_data_criacao}
+    📆 Data Resultado ${sorteio_data_resultado}
+    ⚙ Status: ${sorteio_status}
+
+    📊 Total = ${total}
+    ✅ Comprados = ${comprados}
+    ❌ Disponíveis = ${disponiveis}
+    💵 Lucro = R$$ ${lucro}
+
+    Resultado Saida:
+    ${resultado_saida}
+
+    🔢 Número Sorteado: ${msg_user_numero}
+    ${msg_user}
+
+  checar_sorteio_concluido_user: |-
+    🎲 Último Sorteio 🎲
+
+    🆔 Id Sorteio: <code>${sorteio_id}</code>
+    🆔 Id Sorteio Caixa: <code>${sorteio_id_api}</code>
+    📅 Data Criacao: ${sorteio_data_criacao}
+    📆 Data Resultado: ${sorteio_data_resultado}
+    ⚙ Status: ${sorteio_status}
+
+    Resultado Saida:
+    ${resultado_saida}
+
+    🔢 Número Sorteado: ${msg_user_numero}
+    🏆 Vencedor: ${msg_user_nome}
+
+  checar_sorteio_status: |-
+    🗒 Checar Status Sorteio 🎲
+    🆔 Id: <code>${sorteio_id}</code>
+    📅 Data Criacao: ${sorteio_data_criacao}
+    📆 Data Resultado: ${sorteio_data_resultado}
+    ⚙ Status: ${sorteio_status}
+
+    💡 Basta clicar nos botoes para alterar o status do sorteio.
+
+  msg_pre_delete_negado_status:
+    ❌ Operação cancelada. O status atual não permite que esse sorteio seja deletado. 
+    Para deletar esse sorteio, o status deve ser "pendente" ou "cancelado".
+
+  msg_pre_delete_negado_reembolso:
+    ❌ Operação cancelada. Não é permitido deletar, pois há clientes que não receberam o reembolso.
+  
+  msg_pre_cancelar_negado_concluido:
+    ❌ Operação cancelada. Não é permitido cancelar, pois o sorteio já foi concluído.
+  
+  msg_pre_cancelar_negado_manutencao:
+    ❌ Operação cancelada. Não é permitido cancelar, pois o bot não esta em Manutencão.
+  
+  msg_pre_remover_negado_manutencao:
+    ❌ Operação cancelada. Não é permitido remover, pois o bot não esta em Manutencão.
+
+  msg_pre_editar_msg_negado_status:
+    ❌ Operação cancelada. Não é permitido alterar a mensagem desse sorteio, o status deve ser "pendente" ou "ativo".
+
+  msg_pre_atualizar_quantidade_sub_premio:
+    ❌ Operação cancelada. Não é permitido alterar a quantidade de sub-prêmios desse sorteio, o status deve ser "pendente".
+
+servidores:
+  msg_ip: |-  
+    👨‍💻 Por favor, forneça o IP. Exemplo: 127.0.0.1 .
+
+    ❌ Pressione /cancelar para cancelar.
+
+  msg_user: |-  
+    📱 Por favor, forneça o usuário. Exemplo: teste.
+
+    ❌ Pressione /cancelar para cancelar.
+
+  msg_key: |-  
+    #⃣ Por favor, forneça a Key. Exemplo: S3nH4.
+
+    ❌ Pressione /cancelar para cancelar.
+  
+  msg_port: |-  
+    ⚡ Por favor, forneça a Porta. Exemplo: 22.
+
+    ❌ Pressione /cancelar para cancelar.
+  
+eventos:
+  quantidade_maxima: |-
+    ⚠ Aviso: A quantidade máxima de 90 eventos foi atingida. Para adicionar mais, remova algum que não seja mais utilizado.
+
+  pre_enviar_evento_agora: |-
+    💡 Para enviar este evento agora, por favor, confirme se está tudo certo.
+    ⚠ Lembre-se de que este evento será enviado para todos os usuários que não estão banidos.
+
+    ✅ Pressione /confirmar.
+
+    ❌ Pressione /cancelar para cancelar.  
+
+  limite_horarios: |-
+    ❌ Operação cancelada. Limite de 48 Horários atingido.
+
+  criar_evento: |-
+    📣 Você está no <b>modo de criação de eventos</b>, no qual você pode agendar mensagens para todos os usuários do bot.
+    Por favor, envie a(s) mensagem(s) que você deseja enviar abaixo. 
+    Algumas variáveis úteis, basta clicar nelas que serão copiadas para sua área de transferência.
+
+    <code>$$hora_do_dia</code>, exemplo: $hora_do_dia
+    <code>$$date_time</code>, exemplo: $date_time
+    <code>$$dia</code>, exemplo: $dia
+    <code>$$mes</code>, exemplo: $mes
+    <code>$$ano</code>, exemplo: $ano
+    <code>$$hora</code>, exemplo: $hora
+    <code>$$user_id</code>, exemplo: $user_id
+    <code>$$nome</code>, exemplo: $nome
+    <code>$$sobrenome</code>, exemplo: $sobrenome
+    <code>$$username</code>, exemplo: $username
+    <code>$$saldo</code>, exemplo: $saldo
+    <code>$$id_sorteio</code>, exemplo: $id_sorteio
+    <code>$$valor_bilhete</code>, exemplo: $valor_bilhete
+    <code>$$numeros_sorteio_atual_disponiveis</code>, exemplo: $numeros_sorteio_atual_disponiveis
+
+    ❌ Pressione /cancelar para cancelar.
+
+  checar_evento: |-
+    🗒 Checar Evento ⏰
+    🆔 Id: <code>${evento_id}</code>
+    ⏰ Nome: ${evento_nome}
+    📅 Data Criacao ${evento_data_criacao}
+    ⚙ Status: ${evento_status}
+
+  listar_eventos: |-
+    Abaixo estão todos os eventos.
+    Basta clicar neles e configurar.
+    
+    Caso precise criar um novo evento. 
+    Clique no botão. "➕ Novo Evento ⏰"
+
+    Total = ${quantidade}
+    Ativos = ${quantidade_on}
+    Desativados = ${quantidade_off}
+
+  atualizar_evento_nome: |-
+    Por favor, forneça um novo nome para este Evento.
+    
+    ‼ Use apenas letras, números, espaços e alguns símbolos. Exemplos: .,!?
+
+    ❌ Pressione /cancelar para cancelar.
+
+  atualizar_evento_mes: |-
+    🗓 Atualizar Meses 
+    🆔 Id: <code>${evento_id}</code>
+    ⏰ Nome: ${evento_nome}
+    ⚙ Status: ${evento_status}
+
+    ✅ Se estiver assim, a mensagem será enviada neste mês.
+    ❌ Se estiver assim, a mensagem não será enviada neste mês.
+    💡 Basta pressionar o botão para ativar ou desativar o envio de mensagens neste mês.
+  
+  atualizar_evento_dia: |-
+    🗓 Atualizar Dias 
+    🆔 Id: <code>${evento_id}</code>
+    ⏰ Nome: ${evento_nome}
+    ⚙ Status: ${evento_status}
+
+    ✅ Se estiver assim, a mensagem será enviada neste dia.
+    ❌ Se estiver assim, a mensagem não será enviada neste dia.
+    💡 Basta pressionar o botão para ativar ou desativar o envio de mensagens neste dia.
+  
+  atualizar_evento_dias_semana: |-
+    🗓 Atualizar Dias Da Semana
+    🆔 Id: <code>${evento_id}</code>
+    ⏰ Nome: ${evento_nome}
+    ⚙ Status: ${evento_status}
+
+    ✅ Se estiver assim, a mensagem será enviada neste dia da semana.
+    ❌ Se estiver assim, a mensagem não será enviada neste dia da semana.
+    💡 Basta pressionar o botão para ativar ou desativar o envio de mensagens neste dia.
+
+  atualizar_evento_horas: |-
+    🗓 Atualizar Horas 
+    🆔 Id: <code>${evento_id}</code>
+    ⏰ Nome: ${evento_nome}
+    ⚙ Status: ${evento_status}
+
+    ✅ Se estiver assim, a mensagem será enviada nesta hora.
+    ❌ Se estiver assim, a mensagem não será enviada nesta hora.
+    🗑 Se pressionar o botão, removerá o horário.
+    💡 Basta pressionar o botão para ativar ou desativar o envio de mensagens nesta hora.
+
+  adicionar_evento_horas: |-
+    Para adicionar uma nova hora, siga o exemplo:  
+    ⏰ <code>${hora_minuto}</code>
+    A hora deve ir de 00 até 23, sendo 00 meia-noite.
+    Em caso de horários simples, use 01, por exemplo.
+    O minuto deve ir de 00 até 59.
+    
+    ❌ Pressione /cancelar para cancelar.
+
+msg_configuracoes: |-
+  ⚙ configurações ⚙
+  
+  🔐 Manutencão: ${msg_manutencao}
+
+msg_atualizar_valor_bilhete: |-
+  Por favor, forneça o valor do bilhete. Exemplo: 💵 Valor: R$$ 1.
+
+  ❌ Pressione /cancelar para cancelar.
+
+msg_atualizar_taxa_efi: |-
+  Por favor, forneça o valor da taxa da efi. Exemplo: 💵 Valor: R$$ 20.
+
+  ❌ Pressione /cancelar para cancelar.
+
+msg_atualizar_bonus_deposito_btc: |-
+  Por favor, forneça o valor do bonus ao depositar via btc. Exemplo: 💵 Valor: R$$ 20.
+
+  ❌ Pressione /cancelar para cancelar.
+
+msg_configuracoes_pagamento: |-
+  ⚙ configurações de pagamento 💳
+
+  💠 MPG:
+  access_token: 
+  ${access_token}
+
+  💠 EFI:
+  client_id: 
+  ${client_id}
+  client_secret: 
+  ${client_secret}
+  chave_pix: 
+  ${chave_pix}
+  certificate: 
+  ${certificate}
+
+  ⚡ BTC:
+  store_id: 
+  ${store_id}
+  api_key: 
+  ${api_key}
+
+  Para alterar alguma informação, basta pressionar o botão do gateway. 
+  Para ativar ou desativar, é só clicar no botão ao lado do gateway.
+
+msg_atualizar_configuracoes_pagamento:
+  mpg:
+    access_token: |-  
+      Por favor, forneça um access token valido, Exemplo: APP_USR-1414.
+
+    redefinido: |-
+      🔑 Dados Mercado Pago atualizado com sucesso:
+      access_token: ${access_token}
+
+    erro: |-
+      Erro ao atualizar a key do mercado pago.
+  
+  efi:
+    client_id: |-  
+      Por favor, forneça um client id valido, Exemplo: Client_Id_955.
+    
+    client_secret: |-  
+      Por favor, forneça um client secret valido, Exemplo: Client_Secret_300.
+    
+    chave_pix: |-  
+      Por favor, forneça uma chave pix valida, Exemplo: ar2f5001.
+
+    certificate: |-  
+      Por favor, forneça um certificado valido, Exemplo: certificado.p12 .
+
+    redefinido: |-
+      🔑 Dados Efi atualizado com sucesso:
+      client_id: ${client_id}
+      client_secret: ${client_secret}
+      certificate: ${certificate}
+      chave_pix: ${chave_pix}
+
+    erro: |-
+      Erro ao atualizar os dados da efi.
+
+  btc:
+    store_id: |-  
+      Por favor, forneça uma store id valida, Exemplo: BqGwQWtMn.
+
+    api_key: |-  
+      Por favor, forneça uma api key valida, Exemplo: eb007uoi.
+
+    redefinido: |-
+      🔑 Dados Bitcoin atualizado com sucesso:
+      store_id: ${store_id}
+      api_key: ${api_key}
+
+    erro: |-
+      Erro ao atualizar os dados do bitcoin.
+
+gateways: |-
+  Olá $nome, escolha qual método de pagamento você deseja usar para fazer o depósito. 
+  Lembre-se de que aceitamos PIX 💠 para tornar tudo mais rápido e prático! 
+  E, se preferir, também estamos prontos para receber pagamentos via Bitcoin Lightning Network ⚡.
+
+gateways_btc_bonus: |-
+  Olá $nome, escolha qual método de pagamento você deseja usar para fazer o depósito. 
+  Lembre-se de que aceitamos PIX 💠 para tornar tudo mais rápido e prático! 
+  E, se preferir, também estamos prontos para receber pagamentos via Bitcoin Lightning Network ⚡.
+  Garantimos um bonus de R$$ ${bonus_deposito_btc} em depositos via Bitcoin Lightning Network ⚡.
+
+gateways_pix: |-
+  Olá $nome, escolha qual método de pagamento você deseja usar para fazer o depósito. 
+  Lembre-se de que aceitamos PIX 💠 para tornar tudo mais rápido e prático!
+
+relatorios: |-
+  📊 Relatorios Completos do Bot 📊
+
+  📡 Total de DNS e IPs:
+  ${total}
+
+  🚫 Total de DNS e IPs Bloqueados: 
+  ${total_banido}
+
+  ♻ Total de DNS e IPs Desbloqueados:
+  ${total_ativo}
+
+
+relatorio_detalhado: |-
+  📊 Relatorio Completo Ano: ${ano_buscado}
+  <br>
+
+relatorio_detalhes: |-
+  ------------------------ Mês: ${mes} ------------------------
+
+  📡 Total de DNS e IPs:
+  ${total}
+
+  🚫 Total de DNS e IPs Bloqueados: 
+  ${total_banido}
+
+  ♻ Total de DNS e IPs Desbloqueados:
+  ${total_ativo}
+
+admin: |-
+  Bem-vindo(a) à área administrativa ${nome}. 
+
+  🔐 Manutencão: ${msg_manutencao}
+  🧑‍💻 Total de usuários : ${total_usuarios}
+
+  📡 Total de DNS e IPs, Hoje:
+  ${total}
+
+  🚫 Bloqueados, Hoje: 
+  ${total_banido}
+
+  ♻ Desbloqueados, Hoje:
+  ${total_ativo}
+
+admin_min: |-
+  Bem-vindo(a) à área administrativa ${nome}. 
+
+  🔐 Manutencão: ${msg_manutencao}
+
+start: |-
+  ${hora_do_dia}, ${nome}. Bem-vindo ao Bot Wib Dns. 
+  Envie documentos txt para o bot gerenciar os Dns.
+
+  🆔 Id: <code>${user_id}</code>
+
+servidor: |-
+  📱 Username: <code>${user}</code>
+  🧑‍💻 Ip: <code>${ip}</code>
+  #⃣ Key: <code>${key}</code> 
+  ⚡ Port: <code>${port}</code> 
+  🆔 Id: <code>${id}</code>
+
+perfil: |-
+  🧑‍💻 Nome: ${nome}
+  📱 Username: ${username}
+  🆔 Id: <code>${user_id}</code>
+  ${ban}
+
+perfil_adm: |-
+  🧑‍💻 Nome: ${nome}
+  📱 Username: ${username}
+  🆔 Id: <code>${user_id}</code>
+
+manutencao: |-
+  ⚠ ${hora_do_dia}, ${nome}. No momento estamos fazendo uma manutenção. Retornaremos em instantes. Peço desculpas pelo transtorno.
+
+broadcaster:
+  msg_enviando: |-
+    📣 Enviando mensagens...
+  
+  msg_enviando_progreco: |-
+    📣 Enviando mensagens... ${progreco}% concluído.
+
+  msg_enviando_confirmacao: |-
+    ✅ ${senders} mensagens foram enviadas para ${users_count} usuários.
+
+broadcast: |-
+  📣 Você está no <b>modo broadcast</b>, no qual você pode enviar mensagens para todos os usuários do bot.
+  Por favor, envie a(s) mensagem(s) que você deseja enviar abaixo. 
+  Algumas variáveis úteis, basta clicar nelas que serão copiadas para sua área de transferência.
+
+  <code>$$hora_do_dia</code>, exemplo: $hora_do_dia
+  <code>$$date_time</code>, exemplo: $date_time
+  <code>$$dia</code>, exemplo: $dia
+  <code>$$mes</code>, exemplo: $mes
+  <code>$$ano</code>, exemplo: $ano
+  <code>$$hora</code>, exemplo: $hora
+  <code>$$user_id</code>, exemplo: $user_id
+  <code>$$nome</code>, exemplo: $nome
+  <code>$$sobrenome</code>, exemplo: $sobrenome
+  <code>$$username</code>, exemplo: $username
+
+  ❌ Pressione /cancelar para cancelar.
+
+broadcast_user: |-
+  📣 Você está no <b>modo broadcast user</b>, no qual você pode enviar mensagens para o usuário do bot.
+  Por favor, envie a(s) mensagem(s) que você deseja enviar abaixo. 
+  Algumas variáveis úteis, basta clicar nelas que serão copiadas para sua área de transferência.
+
+  <code>$$hora_do_dia</code>, exemplo: $hora_do_dia
+  <code>$$date_time</code>, exemplo: $date_time
+  <code>$$dia</code>, exemplo: $dia
+  <code>$$mes</code>, exemplo: $mes
+  <code>$$ano</code>, exemplo: $ano
+  <code>$$hora</code>, exemplo: $hora
+  <code>$$user_id</code>, exemplo: $user_id
+  <code>$$nome</code>, exemplo: $nome
+  <code>$$sobrenome</code>, exemplo: $sobrenome
+  <code>$$username</code>, exemplo: $username
+
+  ❌ Pressione /cancelar para cancelar.
+
+broadcast_add: |-
+  ✔️ Mensagem adicionada.
+
+  🔎 Envie mais mensagens.
+  ✅ Pressione <b>/enviar</b> para enviar.
+  ❌ Pressione <b>/cancel</b> para cancelar.
+
+saldo_baixo: |-
+  ${hora_do_dia}, ${nome}. Percebi que seu saldo está baixo. Para continuar comprando, por favor adicione mais saldo 😊.
+  
+  💡Dica: R$$ ${saldo_necessario} este é o valor necessário para comprar o(s) produto(s) que você deseja.
+
+sem_estoque: |-
+  ${hora_do_dia}, ${nome}. Infelizmente, não temos proxys disponíveis no momento 🥺.
+  Assim que novas proxys estiverem disponíveis, você será o primeiro(a) a saber ${nome} 😁.
+
+deposito: |-
+  ${msg_adicional}
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💠 PIX 💠
+  💵 Valor: R$$ ${valor_deposito}
+
+msg_valor_deposito: |-
+  Por favor, forneça o valor do deposito. Exemplo: 💵 Valor: R$$ 20.
+
+  ❌ Pressione /cancelar para cancelar.
+
+msg_valor_deposito_cancelado: |-
+  Deposito cancelado com sucesso.
+
+msg_deposito: |-
+  ✅ Pagamento gerado.
+
+  ⚠️ Está com problemas no pagamento? Tente fazer o pagamento por meio de outro banco!
+
+  💵 Valor: R$$ ${valor} 
+  ⏱ Prazo de expiração: 10 Minutos
+
+  💠 Pix Copia e Cola:
+  <code>${pix}</code>
+
+  💡 Dica: Clique no código acima para copiá-lo
+
+  Após o pagamento, aguarde o seu saldo será creditado automaticamente.
+
+msg_deposito_lk: |-
+  ✅ Pagamento gerado.
+
+  ⚠️ Está com problemas no pagamento? Tente fazer o pagamento por meio de outro banco!
+
+  💵 Valor: R$$ ${valor} 
+  ⏱ Prazo de expiração: 10 Minutos
+
+  💠 Pix Copia e Cola:
+  <code>${pix}</code>
+
+  💡 Dica: Clique no código acima para copiá-lo. Se preferir, use o link com QR Code abaixo.
+
+  🔗 Link de pagamento:
+  ${link}
+
+  Após o pagamento, aguarde o seu saldo será creditado automaticamente.
+
+msg_deposito_btc: |-
+  ✅ Pagamento gerado.
+
+  💵 Valor: R$$ ${valor} 
+  ⏱ Prazo de expiração: 10 Minutos
+  
+  ⚠ Aviso importante, este pagamente funciona apenas na rede Lightning ⚡.
+
+  🔗 Link de pagamento:
+  ${link}
+
+  💡 Dica: caso não tenha uma carteira Lightning ⚡, recomendamos a <a href="https://blink.sv/">Blink</a> .
+
+  Após o pagamento, aguarde o seu saldo será creditado automaticamente.
+
+msg_compra_criar_session: |-
+  Olá $nome, o valor para criar a session e: 
+  💵 Valor: R$$ ${valor}
+
+  Para criar uma session, pressione o botão abaixo 😉.
+
+cadastro_numero:
+  telefone: |-
+    Digite seu número, exemplo: +55(21)99684-2317
+    <b>obs: digite apenas os Números</b>
+
+  ler_qr: |-
+    1- Abra o Telegram no seu telefone.
+    2- Vá para Configurações &gt; Dispositivos &gt; Vincular dispositivo de desktop.
+    3- Leia o QR code com a conta que deseja transformar em session.
+
+  password: |-
+    Digite a 2fa, exemplo: senha segura 2fa
+
+  cadastro_sucesso: |-
+    Parabéns, session criada com sucesso!
+
+  falha: |-  
+    Ops! Parece que houve um erro ao processar suas informacoes. Por favor aguarde e tente novamente mais tarde.
+
+comprovante_compra_criar_session: |-
+  🧾 Comprovante:
+  🆔 Id: <code>${user_id}</code>
+  🧑‍💻 Nome: ${nome}
+  📱 Username: ${username}
+  📦 session : ${session}
+  💵 Valor: R$$ ${valor}
+  💰 Saldo antes da compra: R$$ ${saldo_anterior}
+  💵 Saldo depois da compra: R$$ ${saldo_posterior}
+  📅 Data: ${date_time}
+
+msg_compra_criar_session_finalizada: |-
+  Obrigado pela compra 😊.
+  Aqui está sua session 📦.
+  Qualquer coisa, é só entrar em contato com nossa equipe 😉.
+
+comprovante_deposito: |-
+  🧾 Comprovante:
+  🆔 Id: <code>${user_id}</code>
+  🧑‍💻 Nome: ${nome}
+  📱 Username: ${username}
+  💸 Valor Depositado: R$$ ${valor}
+  💰 Saldo antes do deposito: R$$ ${saldo_anterior}
+  💵 Saldo depois do deposito: R$$ ${saldo_posterior}
+  📅 Data: ${date_time}
+
+comprovante_deposito_btc_bonus: |-
+  🧾 Comprovante:
+  🆔 Id: <code>${user_id}</code>
+  🧑‍💻 Nome: ${nome}
+  📱 Username: ${username}
+  💸 Valor Depositado: R$$ ${valor}
+  🏷 Bônus: R$$ ${bonus}
+  💰 Saldo antes do deposito: R$$ ${saldo_anterior}
+  💵 Saldo depois do deposito: R$$ ${saldo_posterior}
+  📅 Data: ${date_time}
+
+deposito_finalizado: |-
+  Obrigado pelo deposito 😊.
+  Seu saldo foi creditado!
+  Qualquer coisa, é só entrar em contato com nossa equipe 😉.
+
+deposito_expirado: |-
+  💠Deposito Expirado! ⚡
+  Qualquer coisa, é só entrar em contato com nossa equipe 😉.
+
+msg_promover_dono: |-
+  Por favor, forneça o id do usuario. Exemplo: <code>/promover_dono ${user_id}</code>.
+
+msg_promover_dono_adm_confirmacao: |-
+  ⚠ Usuário Promovido
+
+msg_listar_donos: |-  
+  Adicione Donos ao bot click em "➕ Novo Dono ⚠" e informe o id, exemplo: <code>${user_id}</code>
+  <br>
+
+msg_listar_donos_aviso: |-  
+  <br>
+  ⚠ Para remover um dono basta clicar no botão correspondente ao id dele.
+
+msg_promover_dono_adm_erro: |-
+  Erro ao promover usuário
+
+msg_listar_admins: |- 
+  Adicione Donos ao bot click em "➕ Novo Admin ⚠" e informe o id, exemplo: <code>${user_id}</code> 
+  <br>
+
+msg_listar_admins_aviso: |- 
+  <br> 
+  ⚠ Para remover um admin basta clicar no botão correspondente ao id dele.
+
+msg_listar_servidores: |- 
+  Adicione Servidores ao bot click em "➕ Novo Servidor ⚠" e informe o user, ip, key. 
+  <br>
+
+msg_listar_servidores_aviso: |- 
+  <br> 
+  ⚠ Para remover um servidor basta clicar no botão correspondente ao id dele.
+
+msg_ban_user: |-  
+  Por favor, forneça o id do usuario. Exemplo: <code>/ban ${user_id}</code>.
+
+msg_ban_user_confirmacao: |-
+  🆔 Id: <code>${user_id}</code>
+  📅 Data: ${date_time}
+  ⚠ Usuário banido
+
+msg_ban_user_cancelado: |-  
+  Por favor, forneça o id do usuario válido. Exemplo: <code>/ban ${user_id}</code>.
+
+msg_ban_user_cancelado_adm: |-  
+  Por favor, forneça um id de usuario que não seja ADM.
+
+msg_ban_user_erro: |-
+  Erro ao banir usuário
+
+msg_unban_user: |-  
+  Por favor, forneça o id do usuario. Exemplo: <code>/unban ${user_id}</code>.
+
+msg_unban_user_confirmacao: |-
+  🆔 Id: <code>${user_id}</code>
+  📅 Data: ${date_time}
+  ⚠ Usuário desbanido
+
+msg_unban_user_cancelado_adm: |-  
+  Por favor, forneça um id de usuario válido. Exemplo: <code>/unban ${user_id}</code>.
+
+msg_unban_user_erro: |-
+  Erro ao desbanir usuário
+
+atualizar_ft_bot: |-
+  Por favor, forneça uma Foto do Bot.
+
+msg_manutencao_off: |-
+  🔓 Manutencão Desativada, todos podem usar o bot normalmente.
+
+msg_manutencao_on: |-
+  🔒 Manutencão Ativa, apenas você pode usar o bot normalmente.
+
+msg_check_user: |-  
+  Por favor, forneça o id do usuário. Exemplo: <code>/check_user ${user_id}</code>.
+
+msg_check_user_cancelado: |-  
+  Por favor, forneça o id do usuário válido. Exemplo: <code>/check_user ${user_id}</code>.
+
+msg_check_user_cb: |-  
+  Por favor, forneça o id do usuário. Exemplo: <code>${user_id}</code>.
+
+  ❌ Pressione /cancelar para cancelar.
+
+msg_buscar_sorteio: |-  
+  Por favor, forneça o id do sorteio. Exemplo: <code>1</code>.
+
+  ❌ Pressione /cancelar para cancelar.
+
+msg_atualizacao_saldo: |-  
+  Por favor, forneça o id do usuário e a quantidade para atualizar o saldo. Exemplo: <code>/atualizar_saldo ${user_id} 10.50</code>.
+
+msg_atualizacao_saldo_cb: |-  
+  Por favor, forneça o novo saldo. Exemplo: 10.50.
+
+  ❌ Pressione /cancelar para cancelar.
+
+msg_atualizacao_saldo_cancelado: |-  
+  Por favor, forneça um id de usuário válido e um valor para a quantidade. Exemplo: <code>/atualizar_saldo ${user_id} 10.50</code>.
+
+msg_atualizacao_saldo_redefinido: |-
+  ✅ Saldo redefinido para o usuário.
+
+msg_atualizacao_saldo_dados: |-
+  ⚠ Aviso atualização de saldo.
+  🆔 Id: <code>${user_id}</code>
+  🧑‍💻 Nome: ${nome}
+  📱 Username: ${username}
+  🆔 Id ADM: <code>${adm_id}</code>
+  💰 Saldo antes da atualização: R$$ ${saldo_anterior}
+  💵 Saldo depois da atualização: R$$ ${saldo_posterior}
+  📅 Data: ${date_time}
+
+msg_atualizacao_saldo_erro: |-
+  Erro ao atualizar o saldo do usuário.
+
+msg_atualizar_grupo_historico: |-  
+  Por favor, forneça o id ou @ do grupo de historico, Exemplo: @teste ou -100204 .
+
+msg_atualizar_grupo_historico_redefinido: |-
+  📝 Grupo historico atualizado com sucesso: ${key_mpg}
+
+msg_atualizar_grupo_historico_erro: |-
+  Erro ao atualizar o grupo de historico.
+
+msg_download_depositos_list: |-
+  $hora_do_dia, ${nome} Dentro desse arquivo, você vai encontrar todos os depositos 😁, tudo bem organizado para facilitar😉.
+  
+  💡 Dica: esse arquivo CSV pode ser aberto em qualquer editor de planilhas. Para facilitar, recomendamos o Google Planilhas para quem usa celular. Basta baixar o app, caso não o tenha, ou se você usa PC, basta clicar no botão abaixo.
+
+msg_download_compras_list: |-
+  $hora_do_dia, ${nome} Dentro desse arquivo, você vai encontrar todas as compras 😁, tudo bem organizado para facilitar😉.
+  
+  💡 Dica: esse arquivo CSV pode ser aberto em qualquer editor de planilhas. Para facilitar, recomendamos o Google Planilhas para quem usa celular. Basta baixar o app, caso não o tenha, ou se você usa PC, basta clicar no botão abaixo.
+
+msg_download_vendas_list: |-
+  $hora_do_dia, ${nome} Dentro desse arquivo, você vai encontrar todas as vendas 😁, tudo bem organizado para facilitar😉.
+  
+  💡 Dica: esse arquivo CSV pode ser aberto em qualquer editor de planilhas. Para facilitar, recomendamos o Google Planilhas para quem usa celular. Basta baixar o app, caso não o tenha, ou se você usa PC, basta clicar no botão abaixo.
+
+msg_download_sorteios_list: |-
+  $hora_do_dia, ${nome} Dentro desse arquivo, você vai encontrar todas os sorteios 😁, tudo bem organizado para facilitar😉.
+  
+  💡 Dica: esse arquivo CSV pode ser aberto em qualquer editor de planilhas. Para facilitar, recomendamos o Google Planilhas para quem usa celular. Basta baixar o app, caso não o tenha, ou se você usa PC, basta clicar no botão abaixo.
+
+get_numeros_sorteio_user: |-
+  $hora_do_dia, ${nome}, abaixo está uma lista com os últimos 20 sorteios realizados. Basta selecionar um deles e será feito o download de todos os seus números comprados referentes ao sorteio em questão.
+
+  💡 Dica:
+
+  ✅ Atual
+  🎊 Concluídos
+  ❌ Cancelados
+
+msg_get_all_date: |-
+  Para fazer a consulta informe algum dos dados abaixo.
+
+  exemplo: <code>$dia</code>
+  exemplo: <code>$mes</code>
+  exemplo: <code>$ano</code>
+
+  ❌ Pressione /cancelar para cancelar.
+
+suporte:
+  suporte_sorteio_principal: |-
+    $hora_do_dia, $nome, percebo que tem dúvidas. Estou aqui para lhe ajudar 😊.
+
+    Dúvidas sobre como ocorre o sorteio:
+
+    1 - Nosso sistema de sorteio é livre de fraudes. Somos o mais transparentes possível. Você receberá cada dado seu e terá acesso a tudo a seu respeito, assim como receberá em mensagem seu(s) número(s) comprado(s).
+    2 - Nos baseamos no resultado da "Loteria Federal", ou seja, não tem como ocorrer fraudes.
+    3 - Assim que todos os bilhetes forem vendidos, o sorteio final será iniciado automaticamente. Um aviso informativo será disparado para todos, avisando. 
+    4 - Usamos o resultado dos dois primeiros sorteados para obter o resultado final..
+    5 - Vou exemplificar melhor para você...😁 
+    6 - Clique no botão "❔ Como Funciona o Sorteio 🎲" abaixo para entender melhor.
+
+    Obrigado e boa sorte, $nome 😊.
+
+  suporte_sorteio_principal_exemplo: |-
+    $hora_do_dia, $nome, percebo que tem dúvidas. Estou aqui para lhe ajudar 😊.
+
+    Esta é a lista de números sorteados no sorteio de número 5895 da "Loteria Federal" no dia 24/08/2024.
+
+    ["081000", "048267", "083518", "014646", "031659"]
+    
+    81000: Pegamos o primeiro sorteado, ignoramos o número "0" inicial.
+    
+    48267: Pegamos o segundo sorteado, ignoramos o número "0" inicial.
+
+    Agora, a partir deles, obtemos os números sorteados do nosso sorteio. Pegamos os três primeiros e os três últimos números de cada sequência.
+    <code>
+    8 1 0 0 0       4 8 2 6 7
+    | | |               | | |
+    8 1 0 = 810         2 6 7 = 267
+    </code>
+    Por fim, unimos os números, formando o número vencedor do grande prêmio desse sorteio: 810267.
+
+    Sobre o recebimento da premiação, basta aguardar que, o mais breve possível, entraremos em contato. Sei que, nesse momento, você deve estar ansioso, mas garanto que receberá seu prêmio o quanto antes.
+    
+    Obrigado e boa sorte, $nome 😊.
+
+  suporte_sub_sorteio: |-
+    $hora_do_dia, $nome, percebo que tem dúvidas. Estou aqui para lhe ajudar 😊.
+
+    Dúvidas sobre como ocorre o sub-sorteio:
+
+    1 - Primeiramente, gostaria de explicar o conceito do sub-sorteio. Esse é um sistema simplificado em que, se o número premiado for comprado, o comprador ganha na mesma hora um prêmio secundário.
+    2 - Assim que um novo sorteio é gerado aleatoriamente, alguns números são escolhidos como números sub-sorteados.
+    3 - Assim que o número é comprado, além de o sistema te dar os parabéns pessoalmente, ele gera um evento informando a todos os outros usuários que você foi premiado. Não se preocupe, não vamos expor nenhum dado seu, no máximo o nome que você colocou no Telegram.
+    4 - Sobre o recebimento da premiação, basta aguardar que, o mais breve possível, entraremos em contato. Sei que, nesse momento, você deve estar ansioso, mas garanto que receberá seu prêmio o quanto antes.
+
+    Obrigado e boa sorte, $nome 😊.
+
+  suporte_deposito: |-
+    $hora_do_dia, $nome, percebo que tem dúvidas. Estou aqui para lhe ajudar 😊.
+    
+    Dúvidas sobre como depositar:
+    
+    1 - Clique no botão "🏦 Adicionar saldo". Após isso, aparecerá uma mensagem perguntando qual gateway deseja usar.
+    2 - Após isso, aparecerá uma mensagem perguntando o valor que deseja depositar. Então, é só informar.
+    3 - Um código Pix será gerado. Basta clicar no código gerado e ele será copiado para a área de transferência do seu aparelho. Ou, clique no link de pagamento, onde aparecerá uma página personalizada com QR Code.
+    4 - Após o pagamento, o valor será automaticamente creditado.
+    5 - ⚠ Importante ressaltar que os pagamentos em Bitcoin são na rede Lightning.
+
+    Obrigado e boa sorte, $nome 😊.
+
+  suporte_compra_bilhetes: |-
+    Dúvidas sobre como comprar Bilhete do Sorteio:
+
+    1 - Clique no botão "🏷 Comprar Bilhete". Após isso, aparecerão botões para adicionar a quantidade que deseja.
+    2 - Note que, ao clicar em "+1", "+10"…, o texto principal irá mudar, quantificando os valores e as quantidades tanto selecionadas quanto disponíveis.
+    3 - Agora que já sabe a quantidade que deseja comprar, clique no botão "✅ Comprar". O sistema salvará os bilhetes como seus imediatamente e o saldo será atualizado.
+    4 - Eventualmente, alguém pode fazer uma compra do mesmo número que lhe foi selecionado segundos antes de você. Nesse caso, o sistema fará o reajuste necessário para finalizar a compra corretamente. O primeiro a finalizar a compra pelo sistema receberá o número.
+    5 - Após a realização da compra, aguarde o sistema processar os dados e você receberá um documento .txt contendo todos os números comprados para o sorteio em questão.
+    6 - Caso seu bilhete seja um dos bilhetes do sub-sorteio, você receberá uma notificação.
+
+  suporte_meus_bilhetes: |-
+    $hora_do_dia, $nome, percebo que tem dúvidas. Estou aqui para lhe ajudar 😊.
+
+    Dúvidas sobre meus bilhetes:
+
+    1 - Caso precise saber sobre seus bilhetes existem dois metodos. 
+    2 - Clique no botão "🏷 Comprar Bilhete". Após isso, clique no botão "🏷 Exibir Meus Bilhetes". Por fim, clique no botão "⬇ Download Meus Bilhetes 🏷" e você receberá um documento .txt contendo todos os números comprados para o sorteio em questão. Essa opção só estará disponível caso exista algum sorteio ativo.
+    3 - Clique no botão "📱 Exibir perfil". Após isso, aparecerá seu perfil e um botão "⬇ Download Lista Sorteios 🎲", clique no botão, aguarde e você receberá uma planilha com todos os números comprados por você, referente a cada sorteio que participou, em um arquivo, junto a um link do Google Planilhas para facilitar a leitura.
+    
+    Obrigado e boa sorte, $nome 😊.
+
+top10saldo:
+  msg_principal: |-
+    Top 10 usuários com os maiores saldos ativos:
+    <br>
+    <br>
+
+  perfil_top10saldo: |-
+    ${iterador}º = 🆔 Id: <code>${user_id}</code>
+    🧑‍💻 Nome: ${nome}
+    📱 Username: ${username}
+    💵 Saldo: R$$ ${saldo}
+    <br>
+    <br>
+
+top10depositantes:
+  msg_principal: |-
+    Top 10 usuários que mais depositaram:
+    <br>
+    <br>
+
+  perfil_top10depositantes: |-
+    ${iterador}º =🆔 Id: <code>${user_id}</code>
+    🧑‍💻 Nome: ${nome}
+    📱 Username: ${username}
+    💵 Valor: R$$ ${total_depositado}
+    <br>
+    <br>
+
+top10compradores:
+  msg_principal: |-
+    Top 10 usuários que mais compraram:
+    <br>
+    <br>
+
+  perfil_top10compradores: |-
+    ${iterador}º =🆔 Id: <code>${user_id}</code>
+    🧑‍💻 Nome: ${nome}
+    📱 Username: ${username}
+    💵 Valor: R$$ ${total_comprado}
+    📊 Quantidade: ${quantidade}
+    <br>
+    <br>

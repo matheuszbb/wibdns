@@ -1,0 +1,29 @@
+# name: Deploy
+
+# on:
+#   push:
+#     branches: [ "main" ]
+    
+# jobs:
+#   CD:    
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v4.1.1
+
+#       - name: Deploy to VPS
+#         uses: appleboy/ssh-action@v1.0.3
+#         with:
+#           host: ${{ secrets.SSH_HOST }}
+#           username: ${{ secrets.SSH_USERNAME }}
+#           password: ${{ secrets.SSH_PRIVATE_KEY }}
+#           script: |
+#             cd sorteio_guilerme/ &&
+#             eval "$(ssh-agent -s)" &&
+#             ssh-add ~/.ssh/github &&
+#             git pull &&
+#             if [ "$(docker ps -a -q -f status=running -f name=sorteio_guilerme)" ]; then
+#                 docker stop $(docker ps -a -q -f status=running -f name=sorteio_guilerme)
+#             fi &&
+#             docker-compose up -d &&
+#             docker image prune

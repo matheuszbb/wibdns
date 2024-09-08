@@ -1,0 +1,10 @@
+services:
+  wibdns:
+    container_name: wibdns
+    build: 
+      context: .
+    env_file:
+      - ./dotenv_files/.env
+    volumes:
+      - ./wibdns:/wibdns
+    command: /bin/sh -c "source /venv/bin/activate && python main.py"

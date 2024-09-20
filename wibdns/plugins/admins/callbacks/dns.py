@@ -15,7 +15,7 @@ from hydrogram.types import (
     ForceReply,
     )
 
-async def ssh_write_to_file(hostname, port, username, password, remote_file_path, data):
+async def ssh_write_to_file(hostname, port, username, password, remote_file_path, data, batch_size=100):
     with paramiko.SSHClient() as client:
         client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
         client.connect(hostname, port=port, username=username, password=password)
@@ -26,17 +26,33 @@ async def ssh_write_to_file(hostname, port, username, password, remote_file_path
         if "Ubuntu" not in os_info and "Debian" not in os_info:
             raise ValueError("Erro OS Desconhecido")
 
-        full_dns = ""
-        for dns in data:
-            full_dns += f'local-zone: "{dns}" redirect\n'
-            full_dns += f'local-data: "{dns} A 127.0.0.1"\n'
-            full_dns += f'local-data: "{dns} AAAA ::1"\n'
-        
-        escaped_full_dns = full_dns.replace('"', '\\"')
+        for i in range(0, len(data), batch_size):
+            batch = data[i:i + batch_size]
+            full_dns = ""
+            for dns in batch:
+                full_dns += f'local-zone: "{dns}" redirect\n'
+                full_dns += f'local-data: "{dns} A 127.0.0.1"\n'
+                full_dns += f'local-data: "{dns} AAAA ::1"\n'
+            
+            escaped_full_dns = full_dns.replace('"', '\\"')
+            if "Ubuntu" in os_info:
+                command = f"echo \"{password}\" | sudo -S bash -c 'echo \"{escaped_full_dns}\" >> {remote_file_path}'"
+            elif "Debian" in os_info:
+                command = f"echo \"{password}\" | su -c 'echo \"{escaped_full_dns}\" >> {remote_file_path}'"
+            
+            stdin, stdout, stderr = client.exec_command(command)
+            stdout.channel.recv_exit_status()
+
+            output = stdout.read().decode()
+            errors = stderr.read().decode()
+            
+            if errors:
+                raise ValueError(f"Erro ao executar o comando: {errors}")
+
         if "Ubuntu" in os_info:
-            command = f"echo \"{password}\" | sudo -S bash -c 'echo \"{escaped_full_dns}\" >> {remote_file_path} && sudo systemctl restart unbound'"
+            command = f"echo \"{password}\" | sudo -S bash -c 'systemctl restart unbound'"
         elif "Debian" in os_info:
-            command = f"echo \"{password}\" | su -c 'echo \"{escaped_full_dns}\" >> {remote_file_path} && systemctl restart unbound'"
+            command = f"echo \"{password}\" | su -c 'systemctl restart unbound'"
         
         stdin, stdout, stderr = client.exec_command(command)
         stdout.channel.recv_exit_status()
@@ -45,7 +61,7 @@ async def ssh_write_to_file(hostname, port, username, password, remote_file_path
         errors = stderr.read().decode()
         
         if errors:
-            raise ValueError(f"Erro ao executar o comando: {errors}")
+            raise ValueError(f"Erro ao reiniciar o serviço: {errors}")
 
 async def ssh_remove_from_file(hostname, port, username, password, remote_file_path, data):
     with paramiko.SSHClient() as client:

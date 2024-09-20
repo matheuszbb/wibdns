@@ -46,7 +46,7 @@ async def ssh_write_to_file(hostname, port, username, password, remote_file_path
             output = stdout.read().decode()
             errors = stderr.read().decode()
             
-            if errors and (("password" not in str(errors)) or ("Senha" not in str(errors))):
+            if errors and (("password" not in str(errors)) and ("Senha" not in str(errors))):
                 raise ValueError(f"Erro ao executar o comando salvar dados: {errors}")
 
         if "Ubuntu" in os_info:
@@ -60,7 +60,7 @@ async def ssh_write_to_file(hostname, port, username, password, remote_file_path
         output = stdout.read().decode()
         errors = stderr.read().decode()
         
-        if errors and (("password" not in str(errors)) or ("Senha" not in str(errors))):
+        if errors and (("password" not in str(errors)) and ("Senha" not in str(errors))):
             raise ValueError(f"Erro ao reiniciar o serviço: {errors}")
 
 async def ssh_remove_from_file(hostname, port, username, password, remote_file_path, data):
@@ -85,7 +85,7 @@ async def ssh_remove_from_file(hostname, port, username, password, remote_file_p
             output = stdout.read().decode()
             errors = stderr.read().decode()
             
-            if errors and (("password" not in str(errors)) or ("Senha" not in str(errors))):
+            if errors and (("password" not in str(errors)) and ("Senha" not in str(errors))):
                 raise ValueError(f"Erro ao executar o comando remover dados: {errors}")
 
         if "Ubuntu" in os_info:
@@ -99,7 +99,7 @@ async def ssh_remove_from_file(hostname, port, username, password, remote_file_p
         output = stdout.read().decode()
         errors = stderr.read().decode()
         
-        if errors and (("password" not in str(errors)) or ("Senha" not in str(errors))):
+        if errors and (("password" not in str(errors)) and ("Senha" not in str(errors))):
             raise ValueError(f"Erro ao reiniciar o serviço: {errors}")
 
 async def gestor_dns(client,message,valid_entries,file_name,user_id):

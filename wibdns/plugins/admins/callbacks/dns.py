@@ -36,7 +36,7 @@ async def ssh_write_to_file(hostname, port, username, password, remote_file_path
             
             escaped_full_dns = full_dns.replace('"', '\\"')
             if "Ubuntu" in os_info:
-                command = "echo {password} | sudo -S sh -c 'echo \"{escaped_full_dns}\" | tee -a {remote_file_path}'"
+                command = f"echo {password} | sudo -S sh -c 'echo \"{escaped_full_dns}\" | tee -a {remote_file_path}'"
             elif "Debian" in os_info:
                 command = f"echo {password} | su -c 'echo \"{escaped_full_dns}\" | tee -a {remote_file_path}'"
 
@@ -50,9 +50,9 @@ async def ssh_write_to_file(hostname, port, username, password, remote_file_path
                 raise ValueError(f"Erro ao executar o comando: {errors}")
 
         if "Ubuntu" in os_info:
-            command = f"echo \"{password}\" | sudo -S bash -c 'systemctl restart unbound'"
+            command = f"echo {password} | sudo -S bash -c 'systemctl restart unbound'"
         elif "Debian" in os_info:
-            command = f"echo \"{password}\" | su -c 'systemctl restart unbound'"
+            command = f"echo {password} | su -c 'systemctl restart unbound'"
         
         stdin, stdout, stderr = client.exec_command(command)
         stdout.channel.recv_exit_status()
@@ -76,9 +76,9 @@ async def ssh_remove_from_file(hostname, port, username, password, remote_file_p
 
         for dns in data:
             if "Ubuntu" in os_info:
-                command = f"echo \"{password}\" | sudo -S bash -c 'sed -i \"/{dns}/d\" {remote_file_path}'"
+                command = f"echo {password} | sudo -S bash -c 'sed -i \"/{dns}/d\" {remote_file_path}'"
             elif "Debian" in os_info:
-                command = f"echo \"{password}\" | su -c 'sed -i \"/{dns}/d\" {remote_file_path}'"
+                command = f"echo {password} | su -c 'sed -i \"/{dns}/d\" {remote_file_path}'"
             stdin, stdout, stderr = client.exec_command(command)
             stdout.channel.recv_exit_status()
 
@@ -89,9 +89,9 @@ async def ssh_remove_from_file(hostname, port, username, password, remote_file_p
                 raise ValueError(f"Erro ao executar o comando: {errors}")
 
         if "Ubuntu" in os_info:
-            command = f"echo \"{password}\" | sudo -S bash -c 'systemctl restart unbound'"
+            command = f"echo {password} | sudo -S bash -c 'systemctl restart unbound'"
         elif "Debian" in os_info:
-            command = f"echo \"{password}\" | su -c 'systemctl restart unbound'"
+            command = f"echo {password} | su -c 'systemctl restart unbound'"
             
         stdin, stdout, stderr = client.exec_command(command)
         stdout.channel.recv_exit_status()

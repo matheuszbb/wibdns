@@ -46,8 +46,8 @@ async def ssh_write_to_file(hostname, port, username, password, remote_file_path
             output = stdout.read().decode()
             errors = stderr.read().decode()
             
-            # if errors:
-            #     raise ValueError(f"Erro ao executar o comando salvar dados: {errors}")
+            if errors and ((not "password" in str(errors)) or (not "senha" in str(errors))):
+                raise ValueError(f"Erro ao executar o comando salvar dados: {errors}")
 
         if "Ubuntu" in os_info:
             command = f"echo {password} | sudo -S bash -c 'systemctl restart unbound'"
@@ -60,7 +60,7 @@ async def ssh_write_to_file(hostname, port, username, password, remote_file_path
         output = stdout.read().decode()
         errors = stderr.read().decode()
         
-        if errors:
+        if errors and ((not "password" in str(errors)) or (not "senha" in str(errors))):
             raise ValueError(f"Erro ao reiniciar o serviço: {errors}")
 
 async def ssh_remove_from_file(hostname, port, username, password, remote_file_path, data):
@@ -85,13 +85,13 @@ async def ssh_remove_from_file(hostname, port, username, password, remote_file_p
             output = stdout.read().decode()
             errors = stderr.read().decode()
             
-            # if errors:
-            #     raise ValueError(f"Erro ao executar o comando remover dados: {errors}")
+            if errors and ((not "password" in str(errors)) or (not "senha" in str(errors))):
+                raise ValueError(f"Erro ao executar o comando remover dados: {errors}")
 
         if "Ubuntu" in os_info:
-            command = f"echo {password} | sudo -S bash -c 'systemctl restart unbound'"
+            command = f"echo \"{password}\" | sudo -S bash -c 'systemctl restart unbound'"
         elif "Debian" in os_info:
-            command = f"echo {password} | su -c 'systemctl restart unbound'"
+            command = f"echo \"{password}\" | su -c 'systemctl restart unbound'"
             
         stdin, stdout, stderr = client.exec_command(command)
         stdout.channel.recv_exit_status()
@@ -99,7 +99,7 @@ async def ssh_remove_from_file(hostname, port, username, password, remote_file_p
         output = stdout.read().decode()
         errors = stderr.read().decode()
         
-        if errors:
+        if errors and ((not "password" in str(errors)) or (not "senha" in str(errors))):
             raise ValueError(f"Erro ao reiniciar o serviço: {errors}")
 
 async def gestor_dns(client,message,valid_entries,file_name,user_id):
@@ -198,6 +198,7 @@ async def handle_txt_pdf_file(client, message):
             except Exception as e: pass
 
         await gestor_dns(client,message,valid_entries,file_name,user_id)
+        return await message.reply(await client.bot.manipular_msg(key_path="msg_processos_finalizados"))
     
     elif message.document.mime_type == "application/pdf":
         document = message.document
@@ -233,3 +234,4 @@ async def handle_txt_pdf_file(client, message):
         }))
 
         await gestor_dns(client,message,valid_entries,file_name,user_id)
+        return await message.reply(await client.bot.manipular_msg(key_path="msg_processos_finalizados"))

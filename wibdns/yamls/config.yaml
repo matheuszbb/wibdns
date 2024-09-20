@@ -379,6 +379,9 @@ msg_operecao_sucesso: |-
 msg_atualizando_dados: |-
   🛅 Atualizando dados, por favor aguarde.
 
+msg_processos_finalizados: |-
+  🎉 Todos os processos foram finalizados 🎊
+
 dns:
   msg_arquivo_recebido: |-
     Arquivo ${file_name_original} recebido e salvo com sucesso!

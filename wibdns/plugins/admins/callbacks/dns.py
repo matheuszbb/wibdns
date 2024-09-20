@@ -3,6 +3,7 @@ import re
 import html
 import uuid
 import pypdf
+import asyncio
 import aiofiles
 import paramiko
 from plugins.decorators.check_donos import check_donos
@@ -155,6 +156,8 @@ async def gestor_dns(client,message,valid_entries,file_name,user_id):
                 await client.bot.async_remove(filename)
             else:
                 await message.reply_text(f"<code>{html.escape(result_str)}</code>")
+        
+        await asyncio.sleep(2)
 
 @Client.on_message(filters.document)
 @check_donos

@@ -2,6 +2,7 @@ import os
 import re
 import html
 import uuid
+import pypdf
 import aiofiles
 import paramiko
 from plugins.decorators.check_donos import check_donos
@@ -65,9 +66,63 @@ async def ssh_remove_from_file(hostname, port, username, password, remote_file_p
         stdin, stdout, stderr = client.exec_command(command)
         stdout.channel.recv_exit_status()
 
+async def gestor_dns(client,message,valid_entries,file_name,user_id):
+    if len(valid_entries) == 0: 
+        try:
+            await client.bot.async_remove(file_name)
+        except Exception as e: pass
+        return await message.reply(await client.bot.manipular_msg(key_path="dns.msg_cancelar_quantidade_validos_zero"))
+    
+    servidores = await client.db.get_all_servidores()
+
+    if not servidores: 
+        try:
+            await client.bot.async_remove(file_name)
+        except Exception as e: pass
+        return await message.reply(await client.bot.manipular_msg(key_path="dns.msg_cancelar_quantidade_servidores_zero"))
+
+    while True:
+        resposta = await message.ask(await client.bot.manipular_msg(key_path="dns.msg_pre_ssh"),reply_markup=ForceReply())
+        try:
+            if resposta.text in ['/cancelar','/cancel']:
+                return await message.reply(await client.bot.manipular_msg(key_path="msg_operecao_cancelada"))
+            elif resposta.text in ['/desbloquear','/bloquear']:
+                resposta = resposta.text
+                break
+        except:pass
+
+    for servidor in servidores:
+        try:
+            if resposta == "/bloquear":
+                await message.reply(await client.bot.manipular_msg(key_path="dns.msg_inicio_bloquear",substitutions={"validos": f"{len(valid_entries)}","ip": f"{servidor['ip']}"}))
+                await ssh_write_to_file(hostname = servidor['ip'], port = servidor['port'], username = servidor['user'], password = servidor['key'], remote_file_path = "/etc/unbound/unbound.conf.d/blocklist.txt", data = valid_entries)
+                await message.reply(await client.bot.manipular_msg(key_path="msg_atualizando_dados"))
+                for dns in valid_entries:
+                    await client.db.add_dns(dns, True, servidor['id'])
+                await message.reply(await client.bot.manipular_msg(key_path="msg_operecao_sucesso"))
+            else:
+                await message.reply(await client.bot.manipular_msg(key_path="dns.msg_inicio_desbloquear",substitutions={"validos": f"{len(valid_entries)}","ip": f"{servidor['ip']}"}))
+                await ssh_remove_from_file(hostname = servidor['ip'], port = servidor['port'], username = servidor['user'], password = servidor['key'], remote_file_path = "/etc/unbound/unbound.conf.d/blocklist.txt", data = valid_entries)
+                await message.reply(await client.bot.manipular_msg(key_path="msg_atualizando_dados"))
+                for dns in valid_entries:
+                    await client.db.add_dns(dns, False, servidor['id'])
+                await message.reply(await client.bot.manipular_msg(key_path="msg_operecao_sucesso"))
+            try:
+                await client.bot.async_remove(file_name)
+            except Exception as e: pass
+        except Exception as e:
+            result_str = str(e) 
+            if len(result_str) > 4096:
+                filename = f'{os.getcwd()}/documentos/erro_log{uuid.uuid4()}.txt'
+                await client.bot.write_to_txt(filename, result_str)
+                await client.send_document(chat_id=user_id,file_name="erro_log.txt",document=filename)
+                await client.bot.async_remove(filename)
+            else:
+                await message.reply_text(f"<code>{html.escape(result_str)}</code>")
+
 @Client.on_message(filters.document)
 @check_donos
-async def handle_txt_file(client, message):
+async def handle_txt_pdf_file(client, message):
     user_id = message.from_user.id 
     if message.document.mime_type == "text/plain":
         document = message.document
@@ -98,63 +153,47 @@ async def handle_txt_file(client, message):
             "invalidos": f"{len(invalid_entries)}",
         }))
 
-        if len(valid_entries) >= 1:
+        if len(invalid_entries) >= 1:
             try:
                 filename_invalidos = f'{os.getcwd()}/documentos/lista_dns_invalidos{uuid.uuid4()}.txt'
                 await client.bot.write_to_txt(filename_invalidos, invalid_entries)
                 await client.send_document(chat_id=user_id,file_name="lista_dns_invalidos.txt",document=filename_invalidos)
                 await client.bot.async_remove(filename_invalidos)
             except Exception as e: pass
+
+        await gestor_dns(client,message,valid_entries,file_name,user_id)
+    
+    elif message.document.mime_type == "application/pdf":
+        document = message.document
+        file_name_original = document.file_name
+        file_name = f'{os.getcwd()}/downloads/lista_dns{uuid.uuid4()}.pdf'
+        await message.download(file_name)
+        await message.reply(await client.bot.manipular_msg(key_path="dns.msg_arquivo_recebido",substitutions={"file_name_original":file_name_original}))
+
+        leitor_pdf = pypdf.PdfReader(file_name)
+        texto = ''
         
-        if len(valid_entries) == 0: 
-            try:
-                await client.bot.async_remove(file_name)
-            except Exception as e: pass
-            return await message.reply(await client.bot.manipular_msg(key_path="dns.msg_cancelar_quantidade_validos_zero"))
+        for pagina in range(len(leitor_pdf.pages)):
+            pagina_obj = leitor_pdf.pages[pagina]
+            texto += pagina_obj.extract_text()
         
-        servidores = await client.db.get_all_servidores()
+        padrao_email = r'\b[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}\b'
+        padrao_dns = r'\b(?:[a-zA-Z0-9-]+\.)+(?!gov\b|gov\.br\b)[a-zA-Z]{2,6}\b'
+        ipv4_pattern = r'^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$'
+        ipv6_pattern = r'^(?:[a-fA-F0-9]{1,4}:){7}[a-fA-F0-9]{1,4}$'
+        
+        texto_sem_emails = re.sub(padrao_email, '', texto)
+        dns_encontrados = re.findall(padrao_dns, texto_sem_emails)
+        v4 = re.findall(ipv4_pattern, texto_sem_emails)
+        v6 = re.findall(ipv6_pattern, texto_sem_emails)
 
-        if not servidores: 
-            try:
-                await client.bot.async_remove(file_name)
-            except Exception as e: pass
-            return await message.reply(await client.bot.manipular_msg(key_path="dns.msg_cancelar_quantidade_servidores_zero"))
+        valid_entries = dns_encontrados+v4+v6
+        invalid_entries = []
 
-        while True:
-            resposta = await message.ask(await client.bot.manipular_msg(key_path="dns.msg_pre_ssh"),reply_markup=ForceReply())
-            try:
-                if resposta.text in ['/cancelar','/cancel']:
-                    return await message.reply(await client.bot.manipular_msg(key_path="msg_operecao_cancelada"))
-                elif resposta.text in ['/desbloquear','/bloquear']:
-                    resposta = resposta.text
-                    break
-            except:pass
+        await message.reply(await client.bot.manipular_msg(key_path="dns.msg_dados_recebimento",substitutions={
+            "total": f"{len(valid_entries)}",
+            "validos": f"{len(valid_entries)}",
+            "invalidos": f"{len(invalid_entries)}",
+        }))
 
-        for servidor in servidores:
-            try:
-                if resposta == "/bloquear":
-                    await message.reply(await client.bot.manipular_msg(key_path="dns.msg_inicio_bloquear",substitutions={"validos": f"{len(valid_entries)}","ip": f"{servidor['ip']}"}))
-                    await ssh_write_to_file(hostname = servidor['ip'], port = servidor['port'], username = servidor['user'], password = servidor['key'], remote_file_path = "/etc/unbound/unbound.conf.d/blocklist.txt", data = valid_entries)
-                    await message.reply(await client.bot.manipular_msg(key_path="msg_atualizando_dados"))
-                    for dns in valid_entries:
-                        await client.db.add_dns(dns, True, servidor['id'])
-                    await message.reply(await client.bot.manipular_msg(key_path="msg_operecao_sucesso"))
-                else:
-                    await message.reply(await client.bot.manipular_msg(key_path="dns.msg_inicio_desbloquear",substitutions={"validos": f"{len(valid_entries)}","ip": f"{servidor['ip']}"}))
-                    await ssh_remove_from_file(hostname = servidor['ip'], port = servidor['port'], username = servidor['user'], password = servidor['key'], remote_file_path = "/etc/unbound/unbound.conf.d/blocklist.txt", data = valid_entries)
-                    await message.reply(await client.bot.manipular_msg(key_path="msg_atualizando_dados"))
-                    for dns in valid_entries:
-                        await client.db.add_dns(dns, False, servidor['id'])
-                    await message.reply(await client.bot.manipular_msg(key_path="msg_operecao_sucesso"))
-                try:
-                    await client.bot.async_remove(file_name)
-                except Exception as e: pass
-            except Exception as e:
-                result_str = str(e) 
-                if len(result_str) > 4096:
-                    filename = f'{os.getcwd()}/documentos/erro_log{uuid.uuid4()}.txt'
-                    await client.bot.write_to_txt(filename, result_str)
-                    await client.send_document(chat_id=user_id,file_name="erro_log.txt",document=filename)
-                    await client.bot.async_remove(filename)
-                else:
-                    await message.reply_text(f"<code>{html.escape(result_str)}</code>")
+        await gestor_dns(client,message,valid_entries,file_name,user_id)

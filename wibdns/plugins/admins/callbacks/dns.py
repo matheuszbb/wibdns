@@ -46,8 +46,8 @@ async def ssh_write_to_file(hostname, port, username, password, remote_file_path
             output = stdout.read().decode()
             errors = stderr.read().decode()
             
-            if errors:
-                raise ValueError(f"Erro ao executar o comando salvar dados: {errors}")
+            # if errors:
+            #     raise ValueError(f"Erro ao executar o comando salvar dados: {errors}")
 
         if "Ubuntu" in os_info:
             command = f"echo {password} | sudo -S bash -c 'systemctl restart unbound'"
@@ -85,8 +85,8 @@ async def ssh_remove_from_file(hostname, port, username, password, remote_file_p
             output = stdout.read().decode()
             errors = stderr.read().decode()
             
-            if errors:
-                raise ValueError(f"Erro ao executar o comando remover dados: {errors}")
+            # if errors:
+            #     raise ValueError(f"Erro ao executar o comando remover dados: {errors}")
 
         if "Ubuntu" in os_info:
             command = f"echo {password} | sudo -S bash -c 'systemctl restart unbound'"

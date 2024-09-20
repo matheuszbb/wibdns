@@ -23,7 +23,8 @@ async def ssh_write_to_file(hostname, port, username, password, remote_file_path
         stdin, stdout, stderr = client.exec_command("cat /etc/os-release")
         os_info = stdout.read().decode()
         
-        if "Ubuntu" not in os_info and "Debian" not in os_info: raise ValueError("Erro OS Desconhecido")
+        if "Ubuntu" not in os_info and "Debian" not in os_info:
+            raise ValueError("Erro OS Desconhecido")
 
         full_dns = ""
         for dns in data:
@@ -33,12 +34,18 @@ async def ssh_write_to_file(hostname, port, username, password, remote_file_path
         
         escaped_full_dns = full_dns.replace('"', '\\"')
         if "Ubuntu" in os_info:
-            command = f"echo {password} | sudo -S sh -c 'echo \"{escaped_full_dns}\" | tee -a {remote_file_path} && sudo systemctl restart unbound'"
+            command = f"echo \"{password}\" | sudo -S bash -c 'echo \"{escaped_full_dns}\" >> {remote_file_path} && sudo systemctl restart unbound'"
         elif "Debian" in os_info:
-            command = f"echo {password} | su -c 'echo \"{escaped_full_dns}\" | tee -a {remote_file_path} && systemctl restart unbound'"
+            command = f"echo \"{password}\" | su -c 'echo \"{escaped_full_dns}\" >> {remote_file_path} && systemctl restart unbound'"
         
         stdin, stdout, stderr = client.exec_command(command)
         stdout.channel.recv_exit_status()
+
+        output = stdout.read().decode()
+        errors = stderr.read().decode()
+        
+        if errors:
+            raise ValueError(f"Erro ao executar o comando: {errors}")
 
 async def ssh_remove_from_file(hostname, port, username, password, remote_file_path, data):
     with paramiko.SSHClient() as client:
@@ -48,23 +55,30 @@ async def ssh_remove_from_file(hostname, port, username, password, remote_file_p
         stdin, stdout, stderr = client.exec_command("cat /etc/os-release")
         os_info = stdout.read().decode()
         
-        if "Ubuntu" not in os_info and "Debian" not in os_info: raise ValueError("Erro OS Desconhecido")
+        if "Ubuntu" not in os_info and "Debian" not in os_info:
+            raise ValueError("Erro OS Desconhecido")
 
         for dns in data:
             if "Ubuntu" in os_info:
-                command = f"echo {password} | sudo -S sh -c 'sed -i \"/{dns}/d\" {remote_file_path}'"
+                command = f"echo \"{password}\" | sudo -S bash -c 'sed -i \"/{dns}/d\" {remote_file_path}'"
             elif "Debian" in os_info:
-                command = f"echo {password} | su -c 'sed -i \"/{dns}/d\" {remote_file_path}'"
+                command = f"echo \"{password}\" | su -c 'sed -i \"/{dns}/d\" {remote_file_path}'"
             stdin, stdout, stderr = client.exec_command(command)
             stdout.channel.recv_exit_status()
 
         if "Ubuntu" in os_info:
-            command = f"echo {password} | sudo -S sh -c 'systemctl restart unbound'"
+            command = f"echo \"{password}\" | sudo -S bash -c 'systemctl restart unbound'"
         elif "Debian" in os_info:
-            command = f"echo {password} | su -c 'systemctl restart unbound'"
+            command = f"echo \"{password}\" | su -c 'systemctl restart unbound'"
             
         stdin, stdout, stderr = client.exec_command(command)
         stdout.channel.recv_exit_status()
+
+        output = stdout.read().decode()
+        errors = stderr.read().decode()
+        
+        if errors:
+            raise ValueError(f"Erro ao executar o comando: {errors}")
 
 async def gestor_dns(client,message,valid_entries,file_name,user_id):
     if len(valid_entries) == 0: 
